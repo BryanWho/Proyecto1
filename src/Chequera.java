@@ -47,28 +47,28 @@ public class Chequera {
                 System.out.print("DIECI");
             }
             if (decenasMil == 1 && unidadesMil == 5) {
-                System.out.print("QUINCE ");
+                System.out.print("QUINCE MIL ");
             }
             if (decenasMil == 1 && unidadesMil == 4) {
-                System.out.print("CATORCE ");
+                System.out.print("CATORCE MIL ");
             }
             if (decenasMil == 1 && unidadesMil == 3) {
-                System.out.print("TRECE ");
+                System.out.print("TRECE MIL ");
             }
             if (decenasMil == 1 && unidadesMil == 2) {
-                System.out.print("DOCE ");
+                System.out.print("DOCE MIL ");
             }
             if (decenasMil == 1 && unidadesMil == 1) {
-                System.out.print("ONCE ");
+                System.out.print("ONCE MIL ");
             }
             if (decenasMil == 1 && unidadesMil == 0) {
-                System.out.println("DIEZ ");
+                System.out.println("DIEZ MIL ");
             }
             if (decenasMil == 2 && unidadesMil != 0) {
                 System.out.print("VEINTI");
             }
             if (decenasMil == 2 && unidadesMil == 0) {
-                System.out.print("VEINTE");
+                System.out.print("VEINTE MIL ");
             }
             if (decenasMil == 3) {
                 System.out.print("TREINTA ");
