@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class CuentaBancaria {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        System.out.println("******************");
         System.out.println("    BIENVENIDO");
-
+        System.out.println("******************");
         Chequera cheque = new Chequera();
         int valorcheque;
         String nombre;
@@ -18,5 +19,6 @@ public class CuentaBancaria {
             valorcheque = sc.nextInt();
         }
         cheque.generarCheque(valorcheque, nombre);
+        sc.close();
     }
 }
