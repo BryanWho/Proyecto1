@@ -1,6 +1,6 @@
 public class Chequera {
 
-    void generarCheque(int valor, String nombre) {
+    public void generarCheque(int valor, String nombre) {
 
         System.out.println("*************************************************");
         System.out.println("              BANCO KONRAD LORENZ");
@@ -285,5 +285,159 @@ public class Chequera {
         }
         System.out.println("PESOS.");
         System.out.println("*************************************************");
+    }
+
+    public void retirarDinero(int dinero) {
+        int dineroOriginal = dinero;
+        int billetesCincuenta = 0;
+        int billetesVeinte = 0;
+        int billetesDiez = 0;
+        int billetesCinco = 0;
+        int billetesDos = 0;
+        int billetesMil = 0;
+        int monedasQuinientos = 0;
+        int monedasDocientos = 0;
+        int monedasCien = 0;
+        int monedasCincuenta = 0;
+        int monedasVeinte = 0;
+        int monedasDiez = 0;
+        if (dinero % 10 != 0) {
+            System.out.println("Solo se pueden retirar multiplos de diez");
+        }
+        if (dinero > 999990) {
+            System.out.println("Solo se pueden retirar hasta máximo $ 999.990");
+        } else {
+            billetesCincuenta = (dinero / 50000);
+            dinero = dinero - (billetesCincuenta * 50000);
+            billetesVeinte = (dinero / 20000);
+            dinero = dinero - (billetesVeinte * 20000);
+            billetesDiez = (dinero / 10000);
+            dinero = dinero - (billetesDiez * 10000);
+            billetesCinco = (dinero / 5000);
+            dinero = dinero - (billetesCinco * 5000);
+            billetesDos = (dinero / 2000);
+            dinero = dinero - (billetesDos * 2000);
+            billetesMil = (dinero / 1000);
+            dinero = dinero - (billetesMil * 1000);
+            monedasQuinientos = (dinero / 500);
+            dinero = dinero - (monedasQuinientos * 500);
+            monedasDocientos = (dinero / 200);
+            dinero = dinero - (monedasDocientos * 200);
+            monedasCien = (dinero / 100);
+            dinero = dinero - (monedasCien * 100);
+            monedasCincuenta = (dinero / 50);
+            dinero = dinero - (monedasCincuenta * 50);
+            monedasVeinte = (dinero / 20);
+            dinero = dinero - (monedasVeinte * 20);
+            monedasDiez = (dinero / 10);
+            System.out.println("El usuario va a retirar $" + dineroOriginal + " pesos.");
+            if (billetesCincuenta != 0) {
+                if(billetesCincuenta == 1){
+                    System.out.println(billetesCincuenta + " billete de $50.000");    
+                }else{
+                    System.out.println(billetesCincuenta + " billetes de $50.000");
+                }
+                
+            }
+            if (billetesVeinte != 0) {
+                if(billetesVeinte == 1){
+                    System.out.println(billetesVeinte + " billete de $20.000");
+                }
+                else{
+                    System.out.println(billetesVeinte + " billetes de $20.000");
+                }
+                
+            }
+            if (billetesDiez != 0) {
+                if(billetesDiez == 1){
+                    System.out.println(billetesDiez + " billete de $10.000");
+                }
+                else{
+                    System.out.println(billetesDiez + " billetes de $10.000");
+                }
+                
+            }
+            if (billetesCinco != 0) {
+                if(billetesCinco == 1){
+                    System.out.println(billetesCinco + " billete de $5.000");
+                }
+                else{
+                    System.out.println(billetesCinco + " billetes de $5.000");
+                }
+                
+            }
+            if (billetesDos != 0) {
+                if(billetesDos == 1){
+                    System.out.println(billetesDos + " billete de $2.000");
+                }
+                else{
+                    System.out.println(billetesDos + " billetes de $2.000");
+                }
+                
+            }
+            if (billetesMil != 0) {
+                if(billetesMil == 1){
+                    System.out.println(billetesMil + " billete de $1.000");
+                }
+                else{
+                    System.out.println(billetesMil + " billetes de $1.000");
+                }
+                
+            }
+            if (monedasQuinientos != 0) {
+                if(monedasQuinientos == 1){
+                    System.out.println(monedasQuinientos + " moneda de $500");
+                }
+                else{
+                    System.out.println(monedasQuinientos + " monedas de $500");
+                }
+                
+            }
+            if (monedasDocientos != 0) {
+                if(monedasDocientos == 1){
+                    System.out.println(monedasDocientos + " moneda de $200");
+                }
+                else{
+                    System.out.println(monedasDocientos + " monedas de $200");
+                }
+                
+            }
+            if (monedasCien != 0) {
+                if(monedasCien == 1){
+                    System.out.println(monedasCien + " moneda de $100");
+                }
+                else{
+                    System.out.println(monedasCien + " monedas de $100");
+                }
+                
+            }
+            if (monedasCincuenta !=0 ){ 
+                if(monedasCincuenta ==1 ){
+                    System.out.println(monedasCincuenta + " moneda de $50");
+                }
+                else{
+                    System.out.println(monedasCincuenta + " monedas de $50");
+                }
+                
+            }
+            if (monedasVeinte != 0) {
+                if(monedasVeinte ==1){
+                    System.out.println(monedasVeinte + " moneda de $20");
+                }
+                else{
+                    System.out.println(monedasVeinte + " monedas de $20");
+                }
+                
+            }
+            if (monedasDiez != 0) {
+                if(monedasDiez ==1){
+                    System.out.println(monedasDiez + " moneda de $10");
+                }
+                else{
+                    System.out.println(monedasDiez + " monedas de $10");
+                }
+                
+            }
+        }
     }
 }

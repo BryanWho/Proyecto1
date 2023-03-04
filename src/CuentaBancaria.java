@@ -19,6 +19,8 @@ public class CuentaBancaria {
             valorcheque = sc.nextInt();
         }
         cheque.generarCheque(valorcheque, nombre);
+
+        cheque.retirarDinero(135230);
         sc.close();
     }
 }
