@@ -229,61 +229,69 @@ public class Chequera {
         }
         if (unidades > 0) {
             if (unidades == 1 && decenas != 1) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
-                System.out.print("UNO ");
+                if (centenasMil == 0 && decenasMil == 0 && unidadesMil == 0 && centenas == 0 && decenas == 0 && unidades == 1) {
+                    System.out.print("UN ");
+                } else {
+                    System.out.print("UNO ");
+                }
             }
             if (unidades == 2 && decenas != 1) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("DOS ");
             }
             if (unidades == 3 && decenas != 1) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("TRES ");
             }
             if (unidades == 4 && decenas != 1) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("CUATRO ");
             }
             if (unidades == 5 && decenas != 1) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("CINCO ");
             }
             if (unidades == 6) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("SEIS ");
             }
             if (unidades == 7) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("SIETE ");
             }
             if (unidades == 8) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("OCHO ");
             }
             if (unidades == 9) {
-                if (decenas != 2) {
+                if (decenas != 2 && decenas != 0) {
                     System.out.print("Y ");
                 }
                 System.out.print("NUEVE ");
             }
         }
-        System.out.println("PESOS.");
+        if (centenasMil == 0 && decenasMil == 0 && unidadesMil == 0 && centenas == 0 && decenas == 0 && unidades == 1) {
+            System.out.println("PESO.");
+        } else {
+            System.out.println("PESOS.");
+        }
         System.out.println("*************************************************");
     }
 
